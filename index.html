@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio website - Manish Belsare</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/2ca50ffc43.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#Responisbility">Position of Responisbility </a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>Hi, I'm <br><span>Manish</span> Belsare</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- --- About Section --- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About me</h1>
+            <p>
+              As a computer science enthusiast, I'm passionate about learning new technologies and applying them to solve real-life problems. I thrive in collaborative team environments and value receiving feedback to improve my work. My curiosity drives me to constantly expand my skill set and stay up-to-date with industry trends.
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Volunteering')">
+                Volunteering
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Web development : </span> <br />
+                  HTML, CSS
+                </li>
+                <li>
+                  <span>App development : </span> <br />
+                  React Native
+                </li>
+                <li>
+                  <span>Backend : </span> <br />
+                  Java, C, C++
+                </li>
+                <li>
+                  <span>Database Management System: </span> <br />
+                  SQL
+                </li>
+                <li>
+                  <span>Content management system : </span> <br />
+                  Wordpress
+                </li>
+                <li>
+                  <span>Email Marketing : </span> <br />
+                  SendinBlue
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>Web developer Intern (Axiom Infotech): </span><br />july
+                  21 - aug 21 <br />
+                  I was able to learn about front-end technologies that helped
+                  me improve my front-end development skills.<br />
+                  Tech Stack: Html | CSS
+                </li>
+                <li>
+                  <span>AppXBuild Pvt. Ltd : </span><br />
+                  24 jan - current <br />I am currently involved in a project
+                  that requires me to utilize cutting-edge technologies, such as
+                  JavaScript and React Native. Throughout my tenure, I have
+                  gained extensive experience in developing multiple projects
+                  using this tech stack.
+                </li>
+            </ul>
+        </div>
+                <div class="tab-contents" id="Volunteering">
+                    <ul>
+                <li>
+                  <span>Aashman Foundation, SOCIAL MEDIA MARKETER : </span
+                  ><br />Jul 2021 – Oct 2021 <br />
+                  Volunteered for an NGO to create awareness among the public
+                  regarding nature and raise funds to provide food for those in
+                  need.
+                </li>
+                <li>
+                  <span>V-Force, Volunteer : </span><br />Apr 2021 – Jul 2021
+                  <br />
+                  contributed to raising awareness about Covid-19 safety
+                  protocols
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>B-tech / Computer Science : </span><br />GHRIET Nagpur
+                  <br />
+                  2019 – 2023 | CGPA: 7.93
+                </li>
+                <li>
+                  <span>HSC(XII) / Science : </span><br />
+                  DGSS Chikhaldara <br />
+                  2018-2019
+                </li>
+                <li>
+                  <span>SSC(XI): </span><br />
+                  DGSS Chikhaldara <br />
+                  2016-2017
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- --- Projects --- -->
+
+<div id="project">
+    <div class="container">
+        <h1 class="subtitle"> My Projects</h1>
+        <div class="work-list">
+            <div class="work"> 
+                <img src="images/work-1.png" alt="">
+                <div class="layer"> 
+                    <h3> Golden Age Wellness  </h3>
+                    <p> app for older adults, addressing health challenges through personalized nutrition and exercise advice. Choose from a variety of fruits and vegetables or explore yoga practices to fight against common problems. Stay healthy, stay active!
+                     <br> <br> TechStack: React Native </p>
+                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+            <div class="work"> 
+                <img src="images/work-2.png" alt="">
+                <div class="layer"> 
+                    <h3> Feedback Management System </h3>
+                    <p> The Feedback Management System is a real-time project
+                      designed specifically for college students to express and
+                      explore their attitudes toward feedback about the
+                      performance of staff members.
+                      <br> <br>  Tech Stack: JavaScript ,Node js, React js, chart.js Strapi,
+                      SQL lite,
+                       </p>
+                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+            <div class="work"> 
+                <img src="images/work-3.png" alt="">
+                <div class="layer"> 
+                    <h3> Email automation</h3>
+                    <p> I have implemented an email automation system using SendinBlue. It allows us to send targeted emails to our mailing list and customize follow-up actions based on recipient behavior. Thank-you emails for registrations, reminders for opened emails, and prompts for unregistered opens. Efficient and personalized communication made easy!</p>
+                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/manishbelsare21" target="_blank" class="btn"> see more</a>
+    </div>
+</div>
+
+<!-- --- Position of Responsibilites --- -->
+<div id="Responisbility">
+  <div class="container">
+      <h1 class="subtitle">Position of Responsibilites</h1>
+      <div class="service-list">
+          <div>
+            <i class="fas fa-laptop-code"></i>
+              <h1> Event Organizer </h1>
+              <h2> Coding club </h2>
+              <p> As an event organizer at the IE Coding Club, I was responsible for creating, organizing, and executing a variety of events aimed at promoting coding and technology among students. </p>
+
+              <!-- <a href="#"> learn more</a>     -->
+          </div>
+          <div>
+            <i class="fas fa-lightbulb"></i>
+              <h1> Marketing Head </h1>
+              <h2> Creativity club </h2>
+              <p>My role is to amplify and showcase the vibrant spirit of innovation and artistic expression within our club. Through strategic marketing campaigns and engaging promotional activities, I aim to inspire and attract individuals to join our dynamic community, where creativity knows no bounds. 
+                  </p>
+
+              <!-- <a href="#"> learn more</a>     -->
+          </div>
+          <div>
+            <i class="fas fa-shield-alt"></i>
+              <h1> Discipline Head</h1>             
+              <h2> Cortex </h2>
+            <p>As the head of the Discipline Committee, I've had the honour of leading a committed team in promoting integrity, equity, and accountability inside our organization. I am excited about new chances to apply my knowledge in improving organizational excellence, employee well-being, and ethical practices.</p>
+              <!-- <a href="#"> learn more</a>     -->
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- --- Contact Info --- -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="subtitle"> Contact <Menu></Menu></h1>
+        <p><i class="fas fa-envelope"></i> Manishbelsare21@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i>7410185174</p>
+        <div class="social-icon">
+          <a href="https://twitter.com/ManishBelsare" target="_blank"> <i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.linkedin.com/in/manishbelsare21/" target="_blank"> <i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/manishbelsare21" target="_blank"> <i class="fa fa-github-square" aria-hidden="true"></i>
+          </i></a>
+        </div>
+        <a href="images/My-resume.pdf" download class="btn btn2">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Enter your Name" required>
+          <input type="email" name="Email" placeholder="Enter your Email" required>
+          <textarea name="Message"  rows="6" placeholder="Enter the Message"></textarea> 
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id ="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p> copyright ©  ManishBelsare</p>
+  </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxG6L1yaYz-VSTrkYc458mOTH4-yFaZi-dH2WaYKTbC-H1YTT_6eob3-yhZ31CzaxVIKQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Thank you for filling the form"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+  </body>
+</html>
